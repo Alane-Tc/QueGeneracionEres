@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #6aa8ab;
+}
+
+#cabecera{
+    width: 100%;
+    height: 150px;
+    margin: 0px auto;
+    min-width: 1024px;
+}
+
+#cabecera #logotipo {
+    margin: 0px auto;
+    padding-top: 40px;
+ }
+
+#cabecera h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms;
+ }
+ #cabecera a {
+    text-decoration: none;
+    color: red;
+  }
+
+  #cabecera h1:hover {
+    text-shadow: 0px 2px 1px #333333, 0px 0px 5px #d34242;
+ }
+
+ .grid-item{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+ }
+
+ .div_Principal{
+    width: 1000px;
+    background-color: white;
+    height: 500px;
+    margin: 0px auto;
+    border: 2px solid #636262;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 8px;
+
+ }
+
+ #Titulos{
+     font-size: 35px;
+     text-shadow: 0px 0px 3px black;
+     padding-bottom: 10px;
+     margin-left: 15px;
+ }
+
+ .Texto_Edad{
+    font-size: 20px;
+    text-shadow: 0px 0px 3px black;
+   
+ }
+
+ .Edad_Usuario{
+    width: 30%; 
+    background: white;
+    padding: 6px;
+    border-radius: 8px;
+   border: 2px solid black;
+   font-size: 15px;
+ }
+
+ #Calcular_Gene{
+     width: 20%;
+     background: #378aca;
+     border: none;
+     padding: 8px;
+     font-size: 15px;
+     cursor: pointer;
+     border-radius: 8px;
+     color: white;
+     margin-top: 10px;
+}
+
+#Calcular_Gene:hover{
+    transition: all 0.5s;
+    background: #3ec83e;
+    color: white;
+}
+
+#Limpiar_Campos{
+    width: 20%;
+     background: #d6b02f;
+     border: none;
+     padding: 8px;
+     font-size: 15px;
+     cursor: pointer;
+     border-radius: 8px;
+     color: white;
+}
+
+#Limpiar_Campos:hover{
+    transition: all 0.5s;
+    background: #c23d3d;
+    color: white;
+}
+
+.Resultado{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+ }
+
+ .resultado{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 25px;
+ }
+
+#MostrarResultado{
+    width: 450px;
+    height: 210px;
+    display: block;
+    background: #a0a941;
+    margin: auto;
+    border-radius: 8px;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    line-height: 110px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-shadow: 10px 10px 15px black;
+    margin-top:5px;
+    }

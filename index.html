@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Que Generación eres?</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+</head>
+
+<body>
+    <header id="cabecera">
+        <div id="logotipo">
+            <h1>
+                <a href="index.html">¿Qué Generación Eres?</a>
+            </h1>
+        </div>
+    </header>
+    <!--Fin del header-->
+    <div class="div_Principal">
+
+        <div class="grid-item">
+            <h1 id="Titulos">Bienvenidos</h1>
+            <form id="Formulario" name="" method="POST">
+                <label for="text" class="Texto_Edad">¿Que Edad Tienes?</label>
+                <br>
+                <input class="Edad_Usuario" type="text" id="Edad" placeholder="Ingresa Tu Edad" name="text">
+                <br>
+                <button type="button" id="Calcular_Gene">Calcular</button>
+                <button type="reset" id="Limpiar_Campos">Limpiar Campos</button>
+                <p class="Resultado">Tu Edad es: <span class="resultado" id="Resu_division"></span></p>
+            </form>
+            <!---IMPRIMIR RESULTADOS-->
+            <div id="MostrarResultado">
+                <div id="Resultado_Final">
+                    <h6>Aqui mostrara que generacion eres</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        Todos los derechos reservados ¿Qué Generación Eres? ©
+    </footer>
+</body>
+
+</html>
