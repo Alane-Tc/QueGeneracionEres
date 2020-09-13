@@ -3,6 +3,7 @@ window.addEventListener("load", function () {
     var Div_resultado = document.querySelector("#MostrarResultado");
     var Div_mosresul = document.querySelector("#Resultado_Final");
     var Limpiar = document.querySelector("#Limpiar_Campos");
+    var Mostrar_Imagen = document.querySelector("#Imagen_Generacion");
 
     function Mostrar() {
         Div_resultado.style.display = "block";
@@ -13,13 +14,42 @@ window.addEventListener("load", function () {
         Div_resultado.style.display = "none";
     }
 
+    function GeneracionSilencisa() {
+        Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/1GeneracionSi.png" width="110px" height="110px">';
+    }
+
+    function GeneracionBoomer() {
+        Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/2boomer.png" width="110px" height="110px">';
+    }
+
+    function GeneracionX() {
+        Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/3GeneracionX.png" width="110px" height="110px">';
+    }
+
+    function Millenial() {
+        Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/4Millenial.png" width="110px" height="110px">';
+    }
+
+    function GeneracionZ() {
+        Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/5GenerecionZ.png" width="110px" height="110px">';
+    }
+
+    function GeneracionAlfa() {
+        Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/6Alfa.png" width="110px" height="110px">';
+    }
+
+    function Sad() {
+        Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/sad.png" width="110px" height="110px">';
+    }
+
     function Generaciones() {
         let s = "Eres de la generación silenciosa";
         let bb = "Eres Baby Boomer";
         let X = "Eres de la generación X";
         let Y = "Eres de la generación Y";
         let Z = "Eres de la generación Z";
-        let mensaje = "Olvide el nombre =("
+        let A = "Eres de la generación Alfa";
+        let mensaje = "Olvide el nombre de la generación"
         var pedir_edad = parseInt(document.querySelector("#Edad").value);
         if (pedir_edad <= 0 || isNaN(pedir_edad)) {
             alert("Error");
@@ -30,31 +60,43 @@ window.addEventListener("load", function () {
             if (pedir_edad >= 1920 && pedir_edad <= 1940) {
                 document.querySelector("#Resu_division").innerHTML = pedir_edad;
                 Mostrar();
+                GeneracionSilencisa();
                 Div_mosresul.innerHTML = s;
             }
             if (pedir_edad >= 1941 && pedir_edad <= 1964) {
                 document.querySelector("#Resu_division").innerHTML = pedir_edad;
                 Mostrar();
+                GeneracionBoomer();
                 Div_mosresul.innerHTML = bb;
             }
             if (pedir_edad >= 1965 && pedir_edad <= 1979) {
                 document.querySelector("#Resu_division").innerHTML = pedir_edad;
                 Mostrar();
+                GeneracionX();
                 Div_mosresul.innerHTML = X;
             }
             if (pedir_edad >= 1980 && pedir_edad <= 2000) {
                 document.querySelector("#Resu_division").innerHTML = pedir_edad;
                 Mostrar();
+                Millenial();
                 Div_mosresul.innerHTML = Y;
             }
             if (pedir_edad >= 2001 && pedir_edad <= 2010) {
                 document.querySelector("#Resu_division").innerHTML = pedir_edad;
                 Mostrar();
+                GeneracionZ();
                 Div_mosresul.innerHTML = Z;
             }
-            if (pedir_edad >= 2011) {
+            if (pedir_edad >= 2011 && pedir_edad <= 2020) {
                 document.querySelector("#Resu_division").innerHTML = pedir_edad;
                 Mostrar();
+                GeneracionAlfa();
+                Div_mosresul.innerHTML = A;
+            }
+            if(pedir_edad >=2021){
+                document.querySelector("#Resu_division").innerHTML = pedir_edad;
+                Mostrar();
+                Sad();
                 Div_mosresul.innerHTML = mensaje;
             }
         }
