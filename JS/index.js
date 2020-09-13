@@ -52,10 +52,12 @@ window.addEventListener("load", function () {
         let mensaje = "Olvide el nombre de la generación"
         var pedir_edad = parseInt(document.querySelector("#Edad").value);
         if (pedir_edad <= 0 || isNaN(pedir_edad)) {
-            alert("Error");
+            alert("Error, intentelo de nuevo");
         } else {
             if (pedir_edad <= 1919) {
-                alert("Lo siento, no recuerdo el nombre de esta generación");
+                Mostrar();
+                Sad();
+                Div_mosresul.innerHTML = mensaje;
             }
             if (pedir_edad >= 1920 && pedir_edad <= 1940) {
                 document.querySelector("#Resu_division").innerHTML = pedir_edad;
