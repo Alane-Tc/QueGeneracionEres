@@ -6,7 +6,7 @@ window.addEventListener("load", function () {
 
     function Mostrar() {
         Div_resultado.style.display = "block";
-        Div_resultado.style.background = "cadetblue";
+        Div_resultado.style.background = "#3BDB50";
     }
 
     function Esconder() {
