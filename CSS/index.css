@@ -1,3 +1,6 @@
+/*
+https://coolors.co/palettes/trending
+*/
 *{
     margin: 0px;
     padding: 0px;
@@ -6,7 +9,7 @@
 
 body{
 
-    background-color: #6aa8ab;
+    background-color: #D7D438;
 }
 
 #cabecera{
@@ -32,11 +35,11 @@ body{
  }
  #cabecera a {
     text-decoration: none;
-    color: red;
+    color: #0D0221;
   }
 
   #cabecera h1:hover {
-    text-shadow: 0px 2px 1px #333333, 0px 0px 5px #d34242;
+    text-shadow: 0px 2px 1px #333333, 0px 0px 5px #0F084B;
  }
 
  .grid-item{
@@ -56,25 +59,14 @@ body{
 
  }
 
- /*
+ 
  #Titulos{
      font-size: 35px;
-     text-shadow: 0px 0px 3px black;
-     padding-bottom: 10px;
-     margin-left: 15px;
+     padding-top: 5px;
+     color: #858585;
  }
-*/
- .Texto_Edad{
-    font-size: 30px;
-    text-shadow: 0px 0px 3px black;
-    display: block;
-    margin-top: 10px;
-   
- }
-
- #Formulario{
-     margin-top: 15px;
- }
+ 
+  
  .Edad_Usuario{
     width: 30%; 
     background: white;
@@ -83,6 +75,10 @@ body{
    border: 2px solid black;
    font-size: 15px;
  }
+
+#Formulario{
+    margin-top: 10px;
+}
 
  #Calcular_Gene{
      width: 20%;
@@ -136,7 +132,7 @@ body{
     width: 450px;
     height: 210px;
     display: block;
-    background: #a0a941;
+    background: #3BDB50;
     margin: auto;
     border-radius: 8px;
 }
