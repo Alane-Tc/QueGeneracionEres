@@ -8,41 +8,43 @@
     <link rel="icon" type="image/x-icon" href="ImgGeneraciones/favicon-16x16.png" />
     <link rel="stylesheet" type="text/css" href="CSS/index.css" />
 </head>
-
 <body>
-    <header id="cabecera">
-        <div id="logotipo">
-            <h1>
-                <a id="Titulo_Principal" href="index.html">¿Qué Generación Eres?</a>
-            </h1>
-        </div>
-    </header>
-    <!--Fin del header-->
-    <div class="div_Principal">
-        <div class="grid-item">
-            <h1 id="Titulos">¿Cual es tu año de nacimiento?</h1>
-            <form id="Formulario" name="" method="POST">
-                <input class="Edad_Usuario" type="number" id="Edad" placeholder="Ingresa Su Año De Nacimiento"
-                    name="text">
-                <br>
-                <button type="button" id="Calcular_Gene">Calcular</button>
-                <button type="reset" id="Limpiar_Campos">Limpiar Campos</button>
-                <p class="Resultado">Año: <span class="resultado" id="Resu_division"></span></p>
-            </form>
-            <!---IMPRIMIR RESULTADOS-->
-            <div id="MostrarResultado">
-                <div id="Resultado_Final">
-                </div>
-                <div id="Imagen_Generacion">
+    <div id="container">
 
+        <header id="cabecera">
+            <div id="logotipo">
+                <h1>
+                    <a id="Titulo_Principal" href="index.html">¿Qué Generación Eres?</a>
+                </h1>
+            </div>
+        </header>
+        <!--Fin del header-->
+        <div class="div_Principal">
+            <div class="grid-item">
+                <h1 id="Titulos">¿Cual es tu año de nacimiento?</h1>
+                <form id="Formulario" name="" method="POST">
+                    <input class="Edad_Usuario" type="number" id="Edad" placeholder="Ingresa Su Año De Nacimiento"
+                        name="text">
+                    <br>
+                    <button type="button" id="Calcular_Gene">Calcular</button>
+                    <button type="reset" id="Limpiar_Campos">Limpiar Campos</button>
+                    <p class="Resultado">Año: <span class="resultado" id="Resu_division"></span></p>
+                </form>
+                <!---IMPRIMIR RESULTADOS-->
+                <div id="MostrarResultado">
+                    <div id="Resultado_Final">
+                    </div>
+                    <div id="Imagen_Generacion">
+
+                    </div>
                 </div>
             </div>
         </div>
+        <footer id="footer">
+            Todos los derechos reservados ¿Qué Generación Eres? 2020 ©
+        </footer>    
+        <script src="JS/index.js"></script>
     </div>
-    <footer id="footer">
-        Todos los derechos reservados ¿Qué Generación Eres? 2020 ©
-    </footer>
-    <script src="JS/index.js"></script>
 </body>
 
 </html>
