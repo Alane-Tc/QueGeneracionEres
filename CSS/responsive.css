@@ -247,9 +247,9 @@
 
 @media (min-width: 1200px) { 
     /*body{background: blueviolet;}*/
-    
+    /*Hello*/
     .div_Principal {
-        width: 75%;
+        width: 65%;
         background-color: white;
         height: 500px;
         margin: 0px auto;
