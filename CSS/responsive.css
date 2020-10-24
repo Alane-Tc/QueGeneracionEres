@@ -91,7 +91,7 @@
 
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
-  /* body{background: green;}*/
+   /*body{background: green;}*/
    
    #cabecera {
     width: 100%;
@@ -167,6 +167,12 @@
  @media (min-width: 768px) and (max-width: 991.98px) { 
     /*body{background: yellow;}*/
 
+    #cabecera{
+        width: 100%;
+        height: 120px;
+        margin: 0px auto;
+    }
+
     .Edad_Usuario{
         width: 60%; 
         background: white;
@@ -207,12 +213,29 @@
         margin: auto;
         border-radius: 8px;
     }
+
+    #footer {
+        width: 100%;
+        height: 100px;
+        line-height: 53px;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        text-shadow: 10px 10px 15px black;
+        margin-top: 5px;
+    }
     
  }
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-   /* body{background: blue;}*/
+    /*body{background: blue;}*/
     
+    #cabecera{
+        width: 100%;
+        height: 120px;
+        margin: 0px auto;
+    }
+
     .Edad_Usuario{
         width: 60%; 
         background: white;
@@ -253,6 +276,17 @@
         margin: auto;
         border-radius: 8px;
     }
+
+    #footer {
+        width: 100%;
+        height: 100px;
+        line-height: 53px;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        text-shadow: 10px 10px 15px black;
+        margin-top: 5px;
+    }
     
  }
 
@@ -260,7 +294,7 @@
     /*body{background: blueviolet;}*/
     /*Hello*/
     .div_Principal {
-        width: 65%;
+        width: 950px;
         background-color: white;
         height: 500px;
         margin: 0px auto;
@@ -308,6 +342,17 @@
         background: #ffffff;
         margin: auto;
         border-radius: 8px;
+    }
+
+    #footer {
+        width: 100%;
+        height: 100px;
+        line-height: 53px;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        text-shadow: 10px 10px 15px black;
+        margin-top: 5px;
     }
 
  }
