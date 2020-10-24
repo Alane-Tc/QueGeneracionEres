@@ -10,6 +10,11 @@ window.addEventListener("load", function () {
         Div_resultado.style.background = "#3BDB50";
     }
 
+    function div_error() {
+        Div_resultado.style.display = "block";
+        Div_resultado.style.background = "#ff7171"; //Color red 
+    }
+
     function Esconder() {
         Div_resultado.style.display = "none";
     }
@@ -42,6 +47,10 @@ window.addEventListener("load", function () {
         Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/sad.png" width="110px" height="110px">';
     }
 
+    function Alert_Error(){
+        Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/Sad2.png" width="100px" height="100px">';
+    }
+
     function Generaciones() {
         let s = "Eres de la generación silenciosa";
         let bb = "Eres Baby Boomer";
@@ -52,7 +61,12 @@ window.addEventListener("load", function () {
         let mensaje = "Olvide el nombre de la generación"
         var pedir_edad = parseInt(document.querySelector("#Edad").value);
         if (pedir_edad <= 0 || isNaN(pedir_edad)) {
-            alert("Error, intentelo de nuevo");
+            //alert("Error, intentelo de nuevo");
+            document.querySelector("#Resu_division").innerHTML = "Error";
+            Div_mosresul.innerHTML = "Uy algo salio mal";
+            div_error();
+            Alert_Error();
+            console.log("Show Error");
         } else {
             if (pedir_edad <= 1919) {
                 Mostrar();
