@@ -63,7 +63,7 @@ window.addEventListener("load", function () {
         if (pedir_edad <= 0 || isNaN(pedir_edad)) {
             //alert("Error, intentelo de nuevo");
             document.querySelector("#Resu_division").innerHTML = "Error";
-            Div_mosresul.innerHTML = "Uy algo salio mal";
+            Div_mosresul.innerHTML = "¡Uy! Algo salió mal";
             div_error();
             Alert_Error();
             console.log("Show Error");
