@@ -47,8 +47,12 @@ window.addEventListener("load", function () {
         Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/sad.png" width="110px" height="110px">';
     }
 
-    function Alert_Error(){
+    function Alert_Error() {
         Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/Sad2.png" width="100px" height="100px">';
+    }
+
+    function Pensar() {
+        Mostrar_Imagen.innerHTML = '<img src="ImgGeneraciones/pensando.png" width="100px" height="100px">'
     }
 
     function Generaciones() {
@@ -68,53 +72,69 @@ window.addEventListener("load", function () {
             Alert_Error();
             console.log("Show Error");
         } else {
-            if (pedir_edad <= 1919) {
+            setTimeout(() => {
+                Div_mosresul.innerHTML = "Estoy Pensando";
                 Mostrar();
-                Sad();
-                Div_mosresul.innerHTML = mensaje;
-            }
-            if (pedir_edad >= 1920 && pedir_edad <= 1940) {
-                document.querySelector("#Resu_division").innerHTML = pedir_edad;
-                Mostrar();
-                GeneracionSilencisa();
-                Div_mosresul.innerHTML = s;
-            }
-            if (pedir_edad >= 1941 && pedir_edad <= 1964) {
-                document.querySelector("#Resu_division").innerHTML = pedir_edad;
-                Mostrar();
-                GeneracionBoomer();
-                Div_mosresul.innerHTML = bb;
-            }
-            if (pedir_edad >= 1965 && pedir_edad <= 1979) {
-                document.querySelector("#Resu_division").innerHTML = pedir_edad;
-                Mostrar();
-                GeneracionX();
-                Div_mosresul.innerHTML = X;
-            }
-            if (pedir_edad >= 1980 && pedir_edad <= 2000) {
-                document.querySelector("#Resu_division").innerHTML = pedir_edad;
-                Mostrar();
-                Millenial();
-                Div_mosresul.innerHTML = Y;
-            }
-            if (pedir_edad >= 2001 && pedir_edad <= 2010) {
-                document.querySelector("#Resu_division").innerHTML = pedir_edad;
-                Mostrar();
-                GeneracionZ();
-                Div_mosresul.innerHTML = Z;
-            }
-            if (pedir_edad >= 2011 && pedir_edad <= 2020) {
-                document.querySelector("#Resu_division").innerHTML = pedir_edad;
-                Mostrar();
-                GeneracionAlfa();
-                Div_mosresul.innerHTML = A;
-            }
-            if(pedir_edad >=2021){
-                document.querySelector("#Resu_division").innerHTML = pedir_edad;
-                Mostrar();
-                Sad();
-                Div_mosresul.innerHTML = mensaje;
-            }
+                Pensar();
+            }, 1000);
+
+            setTimeout(() => {
+                Div_mosresul.innerHTML = "Estoy Pensando...";
+                Mostrar()
+                Pensar();
+            }, 2000);
+
+            setTimeout(() => {
+
+                if (pedir_edad <= 1919) {
+                    Mostrar();
+                    Sad();
+                    Div_mosresul.innerHTML = mensaje;
+                }
+                if (pedir_edad >= 1920 && pedir_edad <= 1940) {
+                    document.querySelector("#Resu_division").innerHTML = pedir_edad;
+                    Mostrar();
+                    GeneracionSilencisa();
+                    Div_mosresul.innerHTML = s;
+                }
+                if (pedir_edad >= 1941 && pedir_edad <= 1964) {
+                    document.querySelector("#Resu_division").innerHTML = pedir_edad;
+                    Mostrar();
+                    GeneracionBoomer();
+                    Div_mosresul.innerHTML = bb;
+                }
+                if (pedir_edad >= 1965 && pedir_edad <= 1979) {
+                    document.querySelector("#Resu_division").innerHTML = pedir_edad;
+                    Mostrar();
+                    GeneracionX();
+                    Div_mosresul.innerHTML = X;
+                }
+                if (pedir_edad >= 1980 && pedir_edad <= 2000) {
+                    document.querySelector("#Resu_division").innerHTML = pedir_edad;
+                    Mostrar();
+                    Millenial();
+                    Div_mosresul.innerHTML = Y;
+                }
+                if (pedir_edad >= 2001 && pedir_edad <= 2010) {
+                    document.querySelector("#Resu_division").innerHTML = pedir_edad;
+                    Mostrar();
+                    GeneracionZ();
+                    Div_mosresul.innerHTML = Z;
+                }
+                if (pedir_edad >= 2011 && pedir_edad <= 2020) {
+                    document.querySelector("#Resu_division").innerHTML = pedir_edad;
+                    Mostrar();
+                    GeneracionAlfa();
+                    Div_mosresul.innerHTML = A;
+                }
+                if (pedir_edad >= 2021) {
+                    document.querySelector("#Resu_division").innerHTML = pedir_edad;
+                    Mostrar();
+                    Sad();
+                    Div_mosresul.innerHTML = mensaje;
+                }
+            }, 3000);
+
         }
     }
 
