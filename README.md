@@ -11,4 +11,4 @@
 
 ------------
 
-[Link de la pagina](https://alane-tc.github.io/QueGeneracionEres/ "Link de la pagina")
+[Link de la pagina](https://quegeneracioneres.netlify.app/ "Link de la pagina")
