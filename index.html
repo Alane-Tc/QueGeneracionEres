@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/index.css" />
     <link rel="stylesheet" type="text/css" href="CSS/responsive.css" />
 </head>
+
 <body>
     <div id="container">
         <header id="cabecera">
@@ -41,8 +42,13 @@
             </div>
         </div>
         <footer id="footer">
-            Todos los derechos reservados ¿Qué Generación Eres? 2020 ©
-        </footer>    
+            Todos los derechos reservados ¿Qué Generación Eres? © <span>
+                <script>
+                    var d = new Date()
+                    document.write(d.getFullYear())
+                </script>
+            </span>
+        </footer>
         <script src="JS/index.js"></script>
     </div>
 </body>
